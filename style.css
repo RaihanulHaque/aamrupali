@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.8rem;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+}
+
+/*brand could be name or image*/
+.brand a {
+    font-family: ;
+    color: green;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.brand a span {
+    color: orange;
+}
+
+.navbar .nav-list {
+    padding: 4rem 0;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav-list li {
+    margin: 1rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.nav-list li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.2rem;
+    color: inherit;
+}
+
+.nav-list li a:hover {
+    background: #C5F1FF;
+    border: 1px solid #C5F1FF;
+    border-radius: 10px;
+
+}
+
+
+.navbar .toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    outline: none;
+    position: absolute;
+    top: 1.1rem;
+    left: 1rem;
+}
+
+.toggler .line1,
+.line3 {
+    display: block;
+    width: 27px;
+    height: 3px;
+    border-radius: 8px;
+    background-color: #222;
+    margin-bottom: 0.4rem;
+    /*from hamburger to cross*/
+    transition: 0.4s;
+}
+
+.toggler .line2 {
+    display: block;
+    width: 20px;
+    height: 3px;
+    border-radius: 8px;
+    background-color: #222;
+    margin-bottom: 0.4rem;
+    /*from hamburger to cross*/
+    transition: 0.4s;
+}
+
+.cross .line1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.cross .line2 {
+    opacity: 0;
+}
+
+.cross .line3 {
+    transform: rotate(45deg) translate(-7px, -5px);
+}
+
+/* Intro Starts */
+
+.intro{
+    padding-top: 60px;
+    text-align: center;
+}
+.intro .image img{
+    width: 100%;
+    height: auto;
+}
+.intro .text{
+    margin-top: -240px;
+    font-size: 1.4rem;
+}
+.intro .text a{
+    border: 1px;
+    padding: 8px;
+    background: #F4B475;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+/* Shop starts */
+.shop{
+    margin-top: 100px;
+    padding: 10px;
+}
+.shop .head-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.shop .head-flex .headline{
+    font-weight: 470;
+    font-size: 1.3rem;
+}
+.shop .head-flex a{
+    position: absolute;
+    right: 10px;
+    color: #F88F29;
+}
+.shop .products{
+    display:flex;
+    flex-direction : row;
+    justify-content : space-evenly;
+    flex-flow : wrap;
+}
+.shop .products .card{
+    height: 300px;
+    width: 190px;
+    border: 1px solid #575B3F;
+    border-radius: 7px;
+    margin-bottom: 24px;
+}
+.shop .products .card .image img{
+    height: 175px;
+    width: 100%;
+    border-radius: 7px;
+}
+.shop .products .card .langra img{
+    width: 175px;
+}
+.shop .products .card .text{
+    padding: 0 10px;
+    
+}
+.shop .products .card .text .name{
+    font-size: 1.5rem;
+    font-weight: 470;
+    
+}
+.shop .products .card .text .price{
+    font-size: 1.15rem;
+    margin-top: -14px;
+}
+.shop .products .card .text button{
+    font-size: 1.2rem;
+    background: #FFA13D;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    text-align: center;
+    margin-left: 19px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+@media only screen and (min-width: 950px){
+    body{
+        font-size: 1.3rem;
+    }
+    .navbar{
+        height: 70px;
+    }
+    .navbar .brand a{
+        font-size: 1.9rem;
+    }
+    .navbar .cart i{
+        display: none;
+    }
+    .nav-list{
+        margin-right: 50px;
+        
+    }
+    .nav-list li a{
+        font-size: 1.4rem;
+    }
+    .nav-list li a i{
+        font-size: 40px;
+        margin-left: 20px;
+        position: absolute;
+        right: 40px;
+        top: 14px;
+    }
+    
+    /* intro Starts */
+    .intro .text{
+        margin-top: -500px;
+        font-size: 2.4rem;
+    }
+    .intro .text a{
+        font-size: 2rem;
+    }
+    
+    /* shop starts */
+    .shop{
+        margin-top: 260px;
+        padding: 0 45px;
+    }
+    .shop .head-flex .headline{
+        font-size: 1.8rem;
+    }
+    .shop .head-flex a{
+        right: 45px;
+    }
+    .shop .products .card{
+        height: 360px;
+        width: 250px;
+        margin-bottom: 34px;
+    }
+    .shop .products .card .image img{
+        height: 228px;
+        width: 100%;
+    }
+    .shop .products .card .text button{
+        margin-top: 7px;
+        margin-left: 48px;
+    }
+}
+
+@media only screen and (min-width:770px) and (max-width: 940px){
+    .navbar .cart i{
+        display: none;
+    }
+    .nav-list{
+        margin-right: 40px;
+    }
+    .nav-list li a i{
+        font-size: 30px;
+        margin-left: 20px;
+        position: absolute;
+        right: 40px;
+        top: 14px;
+    }
+    
+    /* intro Starts */
+    .intro .text{
+        margin-top: -400px;
+        font-size: 1.9rem;
+    }
+    .intro .text a{
+        font-size: 1.4rem;
+    }
+    /* Shop starts */
+    .shop{
+        margin-top: 200px;
+        padding: 0 30px;
+    }
+    .shop .head-flex a{
+        right: 30px;
+    }
+    .shop .card .products{
+        height: 300px;
+        width: 210px;
+    }
+}
+@media (max-width: 769px) {
+
+    .brand a {
+        position: absolute;
+        left: 31%;
+        top: 15px;
+    }
+    .navbar i{
+        font-size: 24px;
+        color: #222;
+    }
+    /*hide nav by transform*/
+
+    .nav-list-container {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        top: 0;
+        left: 0;
+        background-color: #F7F7F7;
+        z-index: 2;
+        transform: translateX(-100%);
+        /*nav sidebar speed*/
+        transition: all 0.4s ease-out;
+        opacity: 0.9;
+    }
+    
+    .nav-list-container:active {}
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-list li a{
+        
+        float: left;
+    }
+    .navbar .nav-list li i{
+        display: none;
+    }
+
+    #footer .start .social ul {
+        padding-top: 15px;
+    }
+}
+
+/*make nav visible by transform*/
+.nav-active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-around;
+        padding: 0.4rem 0;
+    }
+
+    /*make nav-list horizontal on big screens*/
+    .navbar .nav-list {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin: 0 0.4rem;
+    }
+
+    .nav-list li a {
+        margin: 0 5px;
+    }
+
+    /*hide toggler button on big screens*/
+    .navbar .toggler {
+        display: none;
+    }
+
+    
+}
