@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@340&display=swap');
+
+
 * {
     box-sizing: border-box;
     user-select: none;
@@ -129,6 +132,7 @@ a{
     height: auto;
 }
 .intro .text{
+    color: #fff;
     margin-top: -240px;
     font-size: 1.4rem;
 }
@@ -163,12 +167,12 @@ a{
 .shop .products{
     display:flex;
     flex-direction : row;
-    justify-content : space-evenly;
+    justify-content : space-between;
     flex-flow : wrap;
 }
 .shop .products .card{
     height: 300px;
-    width: 190px;
+    width: 186px;
     border: 1px solid #575B3F;
     border-radius: 7px;
     margin-bottom: 24px;
@@ -201,10 +205,192 @@ a{
     border: none;
     padding: 5px 8px;
     text-align: center;
-    margin-left: 19px;
+    margin-left: 15px;
     border-radius: 5px;
     text-transform: uppercase;
 }
+
+/* Phone Delevery Starts */
+.phone-delivery{
+    margin-top: 50px;
+    padding: 10px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow : wrap;
+}
+.phone-delivery .image img{
+    height: 400px;
+    
+    
+}
+.phone-delivery .text{
+}
+.phone-delivery .text .headline{
+    font-weight: 470;
+    font-size: 1.3rem;
+}
+.phone-delivery .text .details{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.38px;
+    font-size: 1.1rem;
+}
+
+/* Subscribe Starts here */
+
+.subscribe{
+    margin: 10px;
+    padding: 15px 18px 25px 18px;
+    text-align: center;
+    background-color: #EEE;
+}
+.subscribe .headline{
+    font-weight: 466;
+    font-size: 1.25rem;
+}
+.subscribe form{
+    display: inline-block;
+    
+}
+.subscribe form input{
+    height: 40px;
+    width: 330px;
+    padding: 8.4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border: 1.5px solid green;
+}
+.subscribe form button{
+    border: none;
+    background-color: green;
+    padding: 6px 10px;
+    color: #fff;
+    height: 40px;
+    margin-left: -10px;
+}
+
+/* Food Blog Starts */
+.blog{
+    padding: 10px;
+}
+.blog .head-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.blog .head-flex .headline{
+    font-weight: 470;
+    font-size: 1.3rem;
+}
+.blog .head-flex a{
+    position: absolute;
+    right: 10px;
+    color: #F88F29;
+}
+.blog .stories{
+    display:flex;
+    flex-direction : row;
+    justify-content : space-around;
+    flex-flow : wrap;
+    margin-bottom: 10px;
+}
+.blog .stories .card{
+    height: 340px;
+    width: 185px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 4px rgba(146, 161, 176, .15);
+}
+.blog .stories .card .image img{
+    height: 175px;
+    width: 100%;
+}
+.blog .stories .card .text{
+    padding: 0 10px;
+    font-family: 'Lato', sans-serif;
+}
+.blog .stories .card .text .headline{
+    font-size: 1.2rem;
+    font-weight: 460;
+}
+.blog .stories .card .text .details{
+    margin-top: 7px;
+    font-size: 0.9rem;
+}
+
+/* footer starts here */
+footer{
+    padding-top: 20px;
+    background-color: #eee;
+    height: 200px;
+}
+footer .headline{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0px;
+    align-items: center;
+}
+footer .headline .logo{
+    color: green;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    position: absolute;
+    left: 14px;
+}
+footer .headline .logo span{
+    color: orange;
+}
+footer .headline ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 14px;
+}
+footer .headline ul li a i{
+    font-size: 19px;
+    padding-right: 14px;
+}
+footer .middle{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 0.9rem;
+}
+footer .middle ul{
+    list-style: none;
+    letter-spacing: 0.5px;
+}
+footer .middle ul li a{
+    line-height: 15px;
+}
+footer .middle .links{
+    
+}
+footer .middle .contact{
+    
+}
+footer .copyright ul{
+    list-style: none;
+    display: flex;
+    /*width: 80%;
+    margin-left: auto;
+    margin-right: auto;*/
+    justify-content: center;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+footer .copyright ul li{
+    padding-left: 15px;
+}
+footer .copyright p{
+    text-align: center;
+    margin-top: -10px;
+}
+
 @media only screen and (min-width: 950px){
     body{
         font-size: 1.3rem;
@@ -266,14 +452,95 @@ a{
         margin-top: 7px;
         margin-left: 48px;
     }
+    
+    /* Phone Delivery Starts here */
+    .phone-delivery{
+        padding: 0 45px;
+        justify-content: space-between;
+    }
+    .phone-delivery .image img{
+        height: 450px;
+    }
+    .phone-delivery .text{
+        width: 430px;
+    }
+    .phone-delivery .text .headline{
+        font-size: 1.8rem;
+    }
+    
+    /* Subscribe Starts here */
+    .subscribe{
+        margin: 35px 45px;
+        padding: 20px 30px 43px 30px;
+    }
+    .subscribe .headline{
+        font-size: 1.7rem;
+    }
+    .subscribe form{
+        margin-top: 20px;
+    }
+    .subscribe form input{
+        width: 400px;
+        font-size: 1.3rem;
+    }
+    .subscribe form button{
+        font-size: 1.3rem;
+    }
+    
+    /* Blog Starts Here */
+    .blog{
+        padding: 0 45px;
+        margin-top: 40px;
+    }
+    .blog .head-flex .headline{
+        font-size: 1.8rem;
+    }
+    .blog .head-flex a{
+        right: 45px;
+    }
+    .blog .stories .card{
+        height: 390px;
+        width: 250px;
+    }.blog .stories .card .image img{
+        height: 220px;
+    }
+    .blog .stories .card .text .details{
+        font-size: 1.1rem;
+    }
+    
+    /* Footer Starts here */
+    footer{
+        margin-top: 27px;
+        height: 245px;
+    }
+    footer .headline .logo{
+        font-size: 31px;
+        left: 26px;
+    }
+    footer .headline ul{
+        right: 50px;
+    }
+    footer .headline ul li a i{
+        font-size: 25px;
+        padding-right: 23px;
+    }
+    footer .middle{
+        font-size: 1.16rem;
+    }
+    footer .copyright ul{
+        
+    }
 }
 
-@media only screen and (min-width:770px) and (max-width: 940px){
+@media only screen and (min-width:780px) and (max-width: 940px){
     .navbar .cart i{
         display: none;
     }
     .nav-list{
         margin-right: 40px;
+    }
+    .nav-list li a{
+        font-size: 18px;
     }
     .nav-list li a i{
         font-size: 30px;
@@ -303,8 +570,58 @@ a{
         height: 300px;
         width: 210px;
     }
+    
+    /* Food blog Starts here */
+    .phone-delivery{
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+    .phone-delivery .image img{
+        height: 380px;
+    }
+    .phone-delivery .text{
+        width: 390px;
+    }
+    
+    /* Subscribe Starts here */
+    .subscribe{
+        margin: 10px 30px;
+    }
+    
+    /* Blog Starts here */
+    .blog{
+        padding: 0 30px;
+    }
+    .blog .head-flex a{
+        right: 30px;
+    }
+    .blog .stories .card{
+        height: 370px;
+        width: 230px;
+    }.blog .stories .card .image img{
+        height: 215px;
+    }
+    .blog .stories .card .text .details{
+        font-size: 1rem;
+    }
+    
+    /* Footer starts here */
+    footer{
+        margin-top: 19px;
+    }
+    footer .headline .logo{
+        font-size: 26px;
+        left: 20px;
+    }
+    footer .headline ul{
+        right: 40px;
+    }
+    footer .headline ul li a i{
+        font-size: 22px;
+        padding-right: 16px;
+    }
 }
-@media (max-width: 769px) {
+@media (max-width: 779px) {
 
     .brand a {
         position: absolute;
